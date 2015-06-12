@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello, data!</title>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+        <!-- <script type="text/javascript" src="lib/d3.js"></script> -->
+    </head>
+    <body>
+        <form name="myform" onSubmit="return handleClick()">
+            <input name="Submit"  type="submit" value="Add Value" />
+            <input type="text" id="myVal"/>
+        </form>
+ 
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+ 
+        <script type="text/javascript">
+ 
+            var dataset = [];
+            for(i=0; i<5; i++){
+                dataset.push(Math.round(Math.random()*50));
+            }
+ 
+            var p = d3.select("body").selectAll("p")
+            .data(dataset)
+            .text(function(d,i){return i + " : " + d;});
+ 
+            function handleClick(event){
+                console.log(document.getElementById("myVal").value)
+                draw(document.getElementById("myVal").value)
+                return false;
+            }
+ 
+            function draw(val){
+                d3.select("body").append("p");
+                dataset.push(val);
+                var p = d3.select("body").selectAll("p")
+                .data(dataset)
+                .text(function(d,i){return i + " : " + d;})
+            }
+ 
+        </script>
+ 
+    </body>
+</html>
