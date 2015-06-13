@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/iron-input/iron-input.html">
+
+    <dom-module id="editable-name-tag">
+
+      <template>
+        <p>
+            This is a <strong>{{owner}}</strong>'s editable-name-tag.
+        </p>
+
+        <input is="iron-input" bind-value="{{owner}}" placeholder="Your name here...">
+
+      </template>
+
+      <script>
+        Polymer({
+          is: "editable-name-tag",
+          properties: {
+            owner: {
+              type: String,
+              value: "abc"
+            }
+          }
+        });
+      </script>
+    
+    </dom-module>
+    
+  <head>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  </head>
+  <body>
+    <editable-name-tag></editable-name-tag>
+  </body>
+</html>

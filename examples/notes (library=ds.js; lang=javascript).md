@@ -1,5 +1,29 @@
+# Javascript Development
 
-# d3
+
+## Graphic Design
+
+[Intro to Material Design](http://www.google.com/design/spec/material-design/introduction.html#introduction-principles)
+
+## Polymer
+
+[Polymer Overview](https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html)
+[Paper Elements](https://elements.polymer-project.org/browse?package=paper-elements)
+[Neon Animation (?)](https://elements.polymer-project.org/elements/neon-animation?active=opaque-animation)
+[Polymer Starter Kit](https://github.com/polymerelements/polymer-starter-kit)
+
+## Data Binding
+
+[2 Way Data Binding](http://n12v.com/2-way-data-binding/)
+
+
+## Julia
+
+[Julia Emscripten](https://github.com/JuliaLang/julia/issues/9430)
+
+[Node-Julia](https://www.npmjs.com/package/node-julia)
+
+## d3
 
 [Using HTML inputs with d3.js](http://www.d3noob.org/2014/04/using-html-inputs-with-d3js.html)
 
