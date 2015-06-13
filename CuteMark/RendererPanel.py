@@ -13,9 +13,8 @@ from PyQt5.QtNetwork import QNetworkRequest
 Signal = pyqtSignal
 Slot = pyqtSlot
 
-import matplotlib
-matplotlib.use('Agg')
-
+# import matplotlib
+# matplotlib.use('Agg')
 
 from scilab.tools.project import *
 from pathlib import *

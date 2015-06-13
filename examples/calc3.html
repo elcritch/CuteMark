@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Input test (circle)</title>
+  
+<div class="calculation" id="">
+    <label for="nRadius" style="display: inline-block; width: 400px; text-align: right">
+        Linear Modulus: <input type="float" id="linear-modulus">
+    </label>
+    <p>
+    <label for="nRadius" style="display: inline-block; width: 400px; text-align: right">
+        Estimated Stress: <output type="float" id="estimated-stress">
+    </label>
+</div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+    // when the input range changes update the circle 
+    d3.select("#linear-modulus").on("input", function() {
+        // alert(this.value);
+        update(+this.value);
+    });
+
+    // Initial starting radius of the circle 
+    update(120);
+
+    // update the elements
+    function update(val) {
+
+      // adjust the text on the range slider
+      d3.select("#estimated-stress").text(val);
+      // d3.select("#nRadius").property("value", nRadius);
+
+    }
+
+</script>

@@ -1,0 +1,31 @@
+{
+  "name": "CuteMark",
+  "version": "0.0.1",
+  "homepage": "https://github.com/elcritch/CuteMark",
+  "authors": [
+    "Jaremy Creechley <creechley@gmail.com>"
+  ],
+  "description": "Qt Based Markdown Editor",
+  "moduleType": [
+    "es6",
+    "globals"
+  ],
+  "keywords": [
+    "qt5",
+    "markdown",
+    "python",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-input": "polymerelements/iron-input#~1.0.3"
+  }
+}
