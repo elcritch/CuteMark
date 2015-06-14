@@ -3,36 +3,78 @@
     <link rel="import" href="bower_components/polymer/polymer.html">
     <link rel="import" href="bower_components/iron-input/iron-input.html">
 
-    <dom-module id="editable-name-tag">
+    <dom-module id="value-tag" >
 
       <template>
+        <div>
         <p>
-            This is a <strong>{{owner}}</strong>'s editable-name-tag.
-        </p>
-
-        <input is="iron-input" bind-value="{{owner}}" placeholder="Your name here...">
-
+            <span>{{desc}}</span>: 
+            <input is="iron-input" bind-value="{{val}}" > 
+            <span><output name="results" class="boxer">{{val}}</output></span>
+        </p>        
+        </div>
+        
       </template>
 
       <script>
         Polymer({
-          is: "editable-name-tag",
-          properties: {
-            owner: {
-              type: String,
-              value: "abc"
+            is: "value-tag",
+            properties: {
+                desc: String,
+                val: Number
             }
-          }
         });
       </script>
     
     </dom-module>
+        
+    <dom-module id="calculation-tag" >
+
+      <template>
+        <p>
+            <span>{{desc}}</span>: 
+
+            <span><output name="results" class="boxer">{{val}}</output></span>
+        </p>        
+        
+        
+      </template>
+
+      <script>
+        Polymer({
+            is: "calculation-tag",
+            properties: {
+                desc: String,
+                val: Number
+            }
+        });
+      </script>
     
+    </dom-module>
+        
   <head>
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <style>
+
+    .boxer {
+        width:100px;
+        height:1.0em;
+        display: inline;
+        border: 1px dotted gray;
+        
+/*        outline-style: dotted;*/
+/*        outline-width: 1px;*/
+/*        margin: 3px 0px 3px 3px;*/
+    }
+    </style>
 
   </head>
   <body>
-    <editable-name-tag></editable-name-tag>
+      
+    <value-tag desc="Slope" id="slope"></value-tag>
+    <value-tag desc="Tangent Modulus (enter)" id="tangent_modulus"></value-tag>
+    <value-tag desc="Intercept" id="intercept"></value-tag>
+
+
   </body>
 </html>
