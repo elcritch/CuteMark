@@ -1,5 +1,17 @@
 # Javascript Development
 
+It appears that data-binding seems to work primarily inside each packages own elements. 
+
+Some sore of "message passing" or "Object.observer" pattern would be needed to bind elements. 
+
+It might be possible to get Polymer to automatically query child elements and bind them somehow (see Polymer child elements below).
+
+
+## Other Libraries
+
+[Rivet](http://rivetsjs.com/)
+[Vue Components](http://vuejs.org/guide/components.html)
+[React: Communication between components](https://facebook.github.io/react/tips/communicate-between-components.html)
 
 ## Graphic Design
 
@@ -12,10 +24,19 @@
 [Neon Animation (?)](https://elements.polymer-project.org/elements/neon-animation?active=opaque-animation)
 [Polymer Starter Kit](https://github.com/polymerelements/polymer-starter-kit)
 
+### Polymer Child Elements
+
+[Communication & Message Passing](https://www.polymer-project.org/0.5/articles/communication.html)
+
+[Nested Polymer Elements](http://stackoverflow.com/questions/23254698/accessing-a-nested-polymer-element)
+
+[Possible Google Groups Solution](https://groups.google.com/a/dartlang.org/forum/#!topic/web/rIwW-bYm4zw)
+[nested-polymer-elements-and-data-binding-in-googles-dart](http://www.roberthartung.de/nested-polymer-elements-and-data-binding-in-googles-dart/)
+
 ## Data Binding
 
 [2 Way Data Binding](http://n12v.com/2-way-data-binding/)
-
+[Object.observe](http://www.html5rocks.com/en/tutorials/es7/observe/)
 
 ## Julia
 
